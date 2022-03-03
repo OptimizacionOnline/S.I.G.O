@@ -10,6 +10,9 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { DescargasComponent } from 'app/descargas/descargas.component';
 import { VideotecaComponent } from 'app/videoteca/videoteca.component';
+import { ClientesComponent } from 'app/clientes/clientes.component';
+import { ProspectosComponent } from 'app/prospectos/prospectos.component';
+import { TicketsComponent } from 'app/tickets/tickets.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -63,5 +66,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'descargas',      component: DescargasComponent },
-    { path: 'videoteca',      component: VideotecaComponent}
+    { path: 'videoteca',      component: VideotecaComponent},
+    { path: 'clientes',       component: ClientesComponent},
+    { path: 'prospectos',     component: ProspectosComponent},
+    { path: 'tickets',        component: TicketsComponent}
 ];
