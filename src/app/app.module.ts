@@ -28,6 +28,8 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ProspectosComponent } from './prospectos/prospectos.component';
 import { TicketsComponent } from './tickets/tickets.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { ConfiguracionComponent } from './configuracion/configuracion.component';
 
 @NgModule({
   imports: [
@@ -51,6 +53,8 @@ import { TicketsComponent } from './tickets/tickets.component';
     ClientesComponent,
     ProspectosComponent,
     TicketsComponent,
+    PerfilComponent,
+    ConfiguracionComponent,
 
   ],
   providers: [],
