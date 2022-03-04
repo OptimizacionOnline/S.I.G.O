@@ -13,6 +13,8 @@ import { VideotecaComponent } from 'app/videoteca/videoteca.component';
 import { ClientesComponent } from 'app/clientes/clientes.component';
 import { ProspectosComponent } from 'app/prospectos/prospectos.component';
 import { TicketsComponent } from 'app/tickets/tickets.component';
+import { PerfilComponent } from 'app/perfil/perfil.component';
+import { ConfiguracionComponent } from 'app/configuracion/configuracion.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -69,5 +71,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'videoteca',      component: VideotecaComponent},
     { path: 'clientes',       component: ClientesComponent},
     { path: 'prospectos',     component: ProspectosComponent},
-    { path: 'tickets',        component: TicketsComponent}
+    { path: 'tickets',        component: TicketsComponent},
+    { path: 'perfil',         component: PerfilComponent},
+    { path: 'configuracion',  component: ConfiguracionComponent}
 ];

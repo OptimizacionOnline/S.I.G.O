@@ -51,10 +51,18 @@
                             <span class="d-lg-none d-md-block">Usuario</span>
                         </p>
                     </a>
+
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="javascript:void(0)">Perfil</a>
-                        <a class="dropdown-item" href="javascript:void(0)">Configuracion</a>
-                        <a class="dropdown-item" href="javascript:void(0)">Salir</a>
+                        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+                            <a class="dropdown-item" [routerLink]="[menuItem.path]">
+                                <i class="material-icons">{{menuItem.icon}}</i>
+                                {{menuItem.title}}
+                            </a>
+                        </li>
+                        <a class="dropdown-item" href="javascript:void(0)">
+                            <i class="material-icons">logout</i>
+                            Salir
+                        </a>
                     </div>
                 </li>
             </ul>
