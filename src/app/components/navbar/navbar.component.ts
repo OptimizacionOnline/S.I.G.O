@@ -10,6 +10,17 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
+    { path: '/dashboard', title: 'Home',  icon: 'home', class: '' },
+    { path: '/descargas', title: 'Descargas',  icon:'download', class: '' },
+    { path: '/videoteca', title: 'Videoteca',  icon:'movie_creation', class: '' },
+    { path: '/clientes', title: 'Clientes',  icon:'people_outline', class: '' },
+    { path: '/prospectos', title: 'Prospectos',  icon:'person_search', class: '' },
+    { path: '/tickets', title: 'Tickets',  icon:'local_activity', class: '' },
+    { path: '/perfil', title: 'Perfil',  icon: 'account_circle', class: '' },
+    { path: '/configuracion', title: 'Configuracíon',  icon:'manage_accounts', class: '' },
+    // { path: '/videoteca', title: 'Videoteca',  icon:'movie_creation', class: '' },
+];
+export const ROUTESTWO: RouteInfo[] = [
     { path: '/perfil', title: 'Perfil',  icon: 'account_circle', class: '' },
     { path: '/configuracion', title: 'Configuracíon',  icon:'manage_accounts', class: '' },
     // { path: '/videoteca', title: 'Videoteca',  icon:'movie_creation', class: '' },
@@ -35,7 +46,7 @@ export class NavbarComponent implements OnInit {
     }
 
     ngOnInit(){
-    this.menuItems = ROUTES.filter(menuItem => menuItem);
+    this.menuItems = ROUTESTWO.filter(menuItem => menuItem);
       this.listTitles = ROUTES.filter(listTitle => listTitle);
       const navbar: HTMLElement = this.element.nativeElement;
       this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
