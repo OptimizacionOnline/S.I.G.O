@@ -30,6 +30,8 @@ import { ProspectosComponent } from './prospectos/prospectos.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
+import { FichaEmpleadoComponent } from './empleados/ficha-empleado/ficha-empleado.component';
+import { ListarEmpleadoComponent } from './empleados/listar-empleado/listar-empleado.component';
 
 @NgModule({
   imports: [
@@ -55,6 +57,8 @@ import { ConfiguracionComponent } from './configuracion/configuracion.component'
     TicketsComponent,
     PerfilComponent,
     ConfiguracionComponent,
+    FichaEmpleadoComponent,
+    ListarEmpleadoComponent,
 
   ],
   providers: [],
