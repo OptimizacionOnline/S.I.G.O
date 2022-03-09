@@ -23,12 +23,22 @@
                             </div>
                         </div>
                     </div>
+
             <div class="card-body">
+                <div class="col-md-12">
                 <div class="tab-content">
+                    <div data-toggle="buttons">
+                        <label class="btn btn-info active">
+                            <a href="#activos"><input type="radio" name="status" checked/> Activos</a>
+                        </label>
+                        <label class="btn btn-info active">
+                            <a href="#inactivos"><input type="radio" name="status"/> Inactivos</a>
+                        </label>
+                    </div>
                     <div class="tab-pane active" id="mios">
-                        <div class="col-md-12">
+                        <!-- Clientes mios-->
                                 <div class="table-responsive">
-                                    <table class="table table-hover">
+                                    <table class="table table-hover" id="activos">
                                         <thead class="">
                                             <th>
                                                 #
@@ -37,13 +47,13 @@
                                                 Dominio
                                             </th>
                                             <th>
-                                                Region
+                                                Ultimo contenido
                                             </th>
                                             <th>
-                                                Creacion de dominio
+                                                Ultimo pago
                                             </th>
                                             <th>
-                                                Fecha de ingreso
+                                                Posicion
                                             </th>
                                         </thead>
                                         <tbody>
@@ -55,7 +65,7 @@
                                                     wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Cordoba
+                                                    12/05/2021
                                                 </td>
                                                 <td>
                                                     10/08/2020
@@ -78,7 +88,7 @@
                                                     wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Cordoba
+                                                    12/05/2021
                                                 </td>
                                                 <td>
                                                     10/08/2020
@@ -101,7 +111,7 @@
                                                     wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Cordoba
+                                                    12/05/2021
                                                 </td>
                                                 <td>
                                                     10/08/2020
@@ -124,7 +134,7 @@
                                                     wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Cordoba
+                                                    12/05/2021
                                                 </td>
                                                 <td>
                                                     25/03/2020
@@ -147,7 +157,7 @@
                                                     wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Cordoba
+                                                    12/05/2021
                                                 </td>
                                                 <td>
                                                     10/07/2019
@@ -170,7 +180,7 @@
                                                     wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Cordoba
+                                                    12/05/2021
                                                 </td>
                                                 <td>
                                                     10/08/2020
@@ -187,28 +197,26 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                        </div>
+                                </div>                        
                     </div>
                     <div class="tab-pane" id="todos">
-                        <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table table-hover">
                                         <thead class="">
                                             <th>
-                                                ID
-                                            </th>
-                                            <th>
-                                                Name
+                                                #
                                             </th>
                                             <th>
                                                 Dominio
                                             </th>
                                             <th>
-                                                City
+                                                Ultimo contenido
                                             </th>
                                             <th>
-                                                Salary
+                                                Ultimo pago
+                                            </th>
+                                            <th>
+                                                Posicion
                                             </th>
                                         </thead>
                                         <tbody>
@@ -217,16 +225,23 @@
                                                     1
                                                 </td>
                                                 <td>
-                                                    Dakota Rice
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Niger
+                                                    12/05/2021
                                                 </td>
                                                 <td>
-                                                    Oud-Turnhout
+                                                    10/08/2020
                                                 </td>
                                                 <td>
-                                                    $36,738
+                                                    20/09/2021
+                                                </td>
+                                                <td>
+                                                    Borrar
+                                                    <!-- <i class="fa fa-pencil"></i>  -->
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-power-off"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -234,16 +249,22 @@
                                                     2
                                                 </td>
                                                 <td>
-                                                    Minerva Hooper
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Curaçao
+                                                    12/05/2021
                                                 </td>
                                                 <td>
-                                                    Sinaai-Waas
+                                                    10/08/2020
                                                 </td>
                                                 <td>
-                                                    $23,789
+                                                    20/09/2021
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-pencil"></i> 
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-power-off"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -251,16 +272,22 @@
                                                     3
                                                 </td>
                                                 <td>
-                                                    Sage Rodriguez
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Netherlands
+                                                    12/05/2021
                                                 </td>
                                                 <td>
-                                                    Baileux
+                                                    10/08/2020
                                                 </td>
                                                 <td>
-                                                    $56,142
+                                                    20/09/2021
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-pencil"></i> 
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-power-off"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -268,16 +295,22 @@
                                                     4
                                                 </td>
                                                 <td>
-                                                    Philip Chaney
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Korea, South
+                                                    12/05/2021
                                                 </td>
                                                 <td>
-                                                    Overland Park
+                                                    25/03/2020
                                                 </td>
                                                 <td>
-                                                    $38,735
+                                                    25/03/2021
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-pencil"></i> 
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-power-off"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -285,16 +318,22 @@
                                                     5
                                                 </td>
                                                 <td>
-                                                    Doris Greene
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Malawi
+                                                    12/05/2021
                                                 </td>
                                                 <td>
-                                                    Feldkirchen in Kärnten
+                                                    10/07/2019
                                                 </td>
                                                 <td>
-                                                    $63,542
+                                                    20/05/2021
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-pencil"></i> 
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-power-off"></i>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -302,16 +341,22 @@
                                                     6
                                                 </td>
                                                 <td>
-                                                    Mason Porter
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
-                                                    Chile
+                                                    12/05/2021
                                                 </td>
                                                 <td>
-                                                    Gloucester
+                                                    10/08/2020
                                                 </td>
                                                 <td>
-                                                    $78,615
+                                                    20/09/2021
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-pencil"></i> 
+                                                </td>
+                                                <td>
+                                                    <i class="fa fa-power-off"></i>
                                                 </td>
                                             </tr>
                                         </tbody>
