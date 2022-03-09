@@ -13,8 +13,23 @@ td{
 }
 
 .link-color {
-     color: #097F94;
+     color: #118ba0;
+     font-weight: bold;
 }
+
+.link-color i{
+     color:#57bd4b;
+}
+
+// .tarjeta:nth-child(odd) {
+//      margin-right:20%;
+// }
+
+// @media screen and (max-width:640px){
+//      .tarjeta:nth-child(odd){
+//           margin-right: 20px;
+//      }
+// }
 
 
 // /* change the colors */
