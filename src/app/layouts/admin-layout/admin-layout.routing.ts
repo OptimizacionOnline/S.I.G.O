@@ -75,6 +75,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'tickets',        component: TicketsComponent},
     { path: 'perfil',         component: PerfilComponent},
     { path: 'configuracion',  component: ConfiguracionComponent},
-    { path: 'empleados/listarempleado',  component: ListarEmpleadoComponent},
+    { path: 'empleados/listar-empleado',  component: ListarEmpleadoComponent},
 
 ];
