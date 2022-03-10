@@ -15,6 +15,7 @@ import { ProspectosComponent } from 'app/prospectos/prospectos.component';
 import { TicketsComponent } from 'app/tickets/tickets.component';
 import { PerfilComponent } from 'app/perfil/perfil.component';
 import { ConfiguracionComponent } from 'app/configuracion/configuracion.component';
+import { ListarEmpleadoComponent } from 'app/empleados/listar-empleado/listar-empleado.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -73,5 +74,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'prospectos',     component: ProspectosComponent},
     { path: 'tickets',        component: TicketsComponent},
     { path: 'perfil',         component: PerfilComponent},
-    { path: 'configuracion',  component: ConfiguracionComponent}
+    { path: 'configuracion',  component: ConfiguracionComponent},
+    { path: 'empleados/listarempleado',  component: ListarEmpleadoComponent},
+
 ];
