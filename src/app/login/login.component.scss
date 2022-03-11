@@ -24,8 +24,28 @@
     padding: 10px;
 }
 
+.logo-sigo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
 .boton-principal-login {
     background: #D71E12;
+}
+
+.titulo-sigo {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 400px){
+    .logo-sigo {
+        max-width: 150px;
+    }
 }
 
 @media screen and (max-width:350px){
