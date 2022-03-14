@@ -8,7 +8,7 @@
                             <div class="nav-tabs">
                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link active" href="#mios" data-toggle="tab">
+                                        <a mat-button class="nav-link active" data-toggle="tab">
                                             <i class="material-icons">people</i> Empleados
                                             <div class="ripple-container"></div>
                                         </a>
@@ -17,46 +17,221 @@
                             </div>
                         </div>
                     </div>
-
-            <div class="card-body">
-                <div class="col-md-12">
-                <div class="tab-content">
-                    <div data-toggle="buttons">
-                        <label class="btn btn-info active">
-                            <a href="#activos"><input type="radio" name="status" checked/> Activos</a>
-                        </label>
-                        <label class="btn btn-info active">
-                            <a href="#inactivos"><input type="radio" name="status"/> Inactivos</a>
-                        </label>
+                    <div class="col-md-12">
+                        <div class="card card-plain">
+                            <div class="card-header card-header-danger">
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="nav-item">
+                                        <a mat-button class="nav-link active" href="#activos" data-toggle="tab">
+                                            <i class="material-icons">people</i> Activos
+                                            <div class="ripple-container"></div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a mat-button class="nav-link" href="#inactivos" data-toggle="tab">
+                                            <i class="material-icons">people</i> Inactivos
+                                            <div class="ripple-container"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane active" id="mios">
-                        <!-- Clientes mios-->
-                                <div class="table-responsive">
-                                    <table class="table table-hover" id="activos">
-                                        <thead class="">
-                                            <th>
-                                                #
-                                            </th>
-                                            <th>
-                                                Nombre Empleado
-                                            </th>
-                                            <th>
-                                                Ultimo contenido
-                                            </th>
-                                            <th>
-                                                Ultimo pago
-                                            </th>
-                                            <th>
-                                                Posicion
-                                            </th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="activos">
+                                    <!-- Empleados activos-->
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="activos">
+                                            <thead class="">
+                                                <th>
+                                                    #
+                                                </th>
+                                                <th>
+                                                    Nombre
+                                                </th>
+                                                <th>
+                                                    Departamento
+                                                </th>
+                                                <th>
+                                                    Rol
+                                                </th>
+                                                <th>
+                                                    Posicion
+                                                </th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        3
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        4
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        25/03/2020
+                                                    </td>
+                                                    <td>
+                                                        25/03/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        5
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/07/2019
+                                                    </td>
+                                                    <td>
+                                                        20/05/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        6
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>                   
+                                </div>
+                                <div class="tab-pane" id="inactivos">
+                                    <!-- Empleados Inactivos -->
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead class="">
+                                                <th>
+                                                    #
+                                                </th>
+                                                <th>
+                                                    Dominio
+                                                </th>
+                                                <th>
+                                                    Ultimo contenido
+                                                </th>
+                                                <th>
+                                                    Ultimo pago
+                                                </th>
+                                                <th>
+                                                    Posicion
+                                                </th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
                                                 <td>
                                                     1
                                                 </td>
                                                 <td>
-                                                    Nombre del empleado
+                                                    wwww.dominiocliente.com
                                                 </td>
                                                 <td>
                                                     12/05/2021
@@ -68,136 +243,138 @@
                                                     20/09/2021
                                                 </td>
                                                 <td>
-                                                    <i class="fa fa-pencil"></i> 
+                                                    Borrar
+                                                    <!-- <i class="fa fa-pencil"></i>  -->
                                                 </td>
                                                 <td>
                                                     <i class="fa fa-power-off"></i>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    Nombre del empleado
-                                                </td>
-                                                <td>
-                                                    12/05/2021
-                                                </td>
-                                                <td>
-                                                    10/08/2020
-                                                </td>
-                                                <td>
-                                                    20/09/2021
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-pencil"></i> 
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    3
-                                                </td>
-                                                <td>
-                                                    Nombre del empleado
-                                                </td>
-                                                <td>
-                                                    12/05/2021
-                                                </td>
-                                                <td>
-                                                    10/08/2020
-                                                </td>
-                                                <td>
-                                                    20/09/2021
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-pencil"></i> 
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    4
-                                                </td>
-                                                <td>
-                                                    Nombre del empleado
-                                                </td>
-                                                <td>
-                                                    12/05/2021
-                                                </td>
-                                                <td>
-                                                    25/03/2020
-                                                </td>
-                                                <td>
-                                                    25/03/2021
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-pencil"></i> 
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    5
-                                                </td>
-                                                <td>
-                                                    Nombre del empleado
-                                                </td>
-                                                <td>
-                                                    12/05/2021
-                                                </td>
-                                                <td>
-                                                    10/07/2019
-                                                </td>
-                                                <td>
-                                                    20/05/2021
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-pencil"></i> 
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    6
-                                                </td>
-                                                <td>
-                                                    Nombre del empleado
-                                                </td>
-                                                <td>
-                                                    12/05/2021
-                                                </td>
-                                                <td>
-                                                    10/08/2020
-                                                </td>
-                                                <td>
-                                                    20/09/2021
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-pencil"></i> 
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>                        
-                    </div>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        3
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        4
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        25/03/2020
+                                                    </td>
+                                                    <td>
+                                                        25/03/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        5
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/07/2019
+                                                    </td>
+                                                    <td>
+                                                        20/05/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        6
+                                                    </td>
+                                                    <td>
+                                                        wwww.dominiocliente.com
+                                                    </td>
+                                                    <td>
+                                                        12/05/2021
+                                                    </td>
+                                                    <td>
+                                                        10/08/2020
+                                                    </td>
+                                                    <td>
+                                                        20/09/2021
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-pencil"></i> 
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-power-off"></i>
+                                                    </td>
+                                                        </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
                     </div>
                 </div>
             </div>
-                </div>
-            </div>    
+            
         </div>
     </div>
   </div>

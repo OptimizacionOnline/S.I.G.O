@@ -16,6 +16,7 @@ import { TicketsComponent } from 'app/tickets/tickets.component';
 import { PerfilComponent } from 'app/perfil/perfil.component';
 import { ConfiguracionComponent } from 'app/configuracion/configuracion.component';
 import { ListarEmpleadoComponent } from 'app/empleados/listar-empleado/listar-empleado.component';
+import { FichaEmpleadoComponent } from 'app/empleados/ficha-empleado/ficha-empleado.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -76,5 +77,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'perfil',         component: PerfilComponent},
     { path: 'configuracion',  component: ConfiguracionComponent},
     { path: 'empleados/listar-empleado',  component: ListarEmpleadoComponent},
+    { path: 'empleados/ficha-empleado',  component: FichaEmpleadoComponent},
 
 ];
