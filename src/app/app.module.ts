@@ -32,8 +32,13 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
 import { FichaEmpleadoComponent } from './empleados/ficha-empleado/ficha-empleado.component';
 import { ListarEmpleadoComponent } from './empleados/listar-empleado/listar-empleado.component';
+<<<<<<< HEAD
 import { FichaClienteComponent } from './info_clientes/ficha-cliente/ficha-cliente.component';
 import { ListarClienteComponent } from './info_clientes/listar-cliente/listar-cliente.component';
+=======
+import { LoginComponent } from './login/login.component';
+import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
+>>>>>>> d7bd9bfdb8868cd70b5c068c2cd20893df5e2b99
 
 @NgModule({
   imports: [
@@ -61,8 +66,13 @@ import { ListarClienteComponent } from './info_clientes/listar-cliente/listar-cl
     ConfiguracionComponent,
     FichaEmpleadoComponent,
     ListarEmpleadoComponent,
+<<<<<<< HEAD
     FichaClienteComponent,
     ListarClienteComponent,
+=======
+    LoginComponent,
+    RecuperarPasswordComponent,
+>>>>>>> d7bd9bfdb8868cd70b5c068c2cd20893df5e2b99
 
   ],
   providers: [],
