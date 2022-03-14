@@ -32,6 +32,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
 import { FichaEmpleadoComponent } from './empleados/ficha-empleado/ficha-empleado.component';
 import { ListarEmpleadoComponent } from './empleados/listar-empleado/listar-empleado.component';
+import { FichaClienteComponent } from './info_clientes/ficha-cliente/ficha-cliente.component';
+import { ListarClienteComponent } from './info_clientes/listar-cliente/listar-cliente.component';
 
 @NgModule({
   imports: [
@@ -59,6 +61,8 @@ import { ListarEmpleadoComponent } from './empleados/listar-empleado/listar-empl
     ConfiguracionComponent,
     FichaEmpleadoComponent,
     ListarEmpleadoComponent,
+    FichaClienteComponent,
+    ListarClienteComponent,
 
   ],
   providers: [],
