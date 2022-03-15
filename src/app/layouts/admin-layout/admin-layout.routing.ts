@@ -77,9 +77,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'perfil',         component: PerfilComponent},
     { path: 'configuracion',  component: ConfiguracionComponent},
     { path: 'empleados/listar-empleado',  component: ListarEmpleadoComponent},
-<<<<<<< HEAD
-=======
     { path: 'empleados/ficha-empleado',  component: FichaEmpleadoComponent},
->>>>>>> d7bd9bfdb8868cd70b5c068c2cd20893df5e2b99
 
 ];
