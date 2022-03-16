@@ -4,9 +4,10 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-warning card-header-icon">
+                    <div class="card-header card-header-success card-header-icon">
                         <div class="card-icon">
-                            <i class="material-icons">library_books</i>
+                            <i class="material-icons">person_add</i>
+                            <!-- Resumen de empleados-->
                         </div>
                         <p class="card-category">Proyectos Activos</p>
                         <h3 class="card-title">0
@@ -17,7 +18,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-success card-header-icon">
+                    <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
                             <i class="material-icons">person_search</i>
                         </div>
@@ -39,7 +40,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-warning card-header-icon">
+                    <div class="card-header card-header-success card-header-icon">
                         <div class="card-icon">
                             <i class="material-icons">confirmation_number</i>
                         </div>
@@ -50,9 +51,10 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="card card-stats">
-                    <div class="card-header card-header-success card-header-icon">
+                    <div class="card-header card-header-warning card-header-icon">
                         <div class="card-icon">
-                            <i class="material-icons">person_search</i>
+                            <i class="material-icons">pending_actions</i>
+                            <!-- person_search -->
                         </div>
                         <p class="card-category">Tickets Pendientes</p>
                         <h3 class="card-title">0</h3>
@@ -63,7 +65,8 @@
                 <div class="card card-stats">
                     <div class="card-header card-header-danger card-header-icon">
                         <div class="card-icon">
-                            <i class="material-icons">local_activity</i>
+                            <i class="material-icons">task</i>
+                            <!-- local_activity -->
                         </div>
                         <p class="card-category">Tickets Resueltos</p>
                         <h3 class="card-title">0</h3>
@@ -76,35 +79,179 @@
             <div class="col-lg-6 col-md-12">
                 <div class="card">
                     <div class="card-header card-header-info">
-                        <h4 class="card-title">Clientes recientes</h4>
+                        <h4 class="card-title">Proyectos en los que esta involucrado</h4>
                     </div>
                     <div class="card-body table-responsive">
                         <table class="table table-hover">
-                            <thead class="text-warning">
-                                <th>ID</th>
-                                <th>Dominio</th>
-                                <th>Fecha</th>
+                            <thead class="">
+                                <th>#</th>
+                                <th>Cliente</th>
+                                <th>Ficha</th>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>www.dominiocliente.com</td>
-                                    <td>05/02/22</td>
+                                    <td>Nombre del cliente</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>www.dominiocliente.com</td>
-                                    <td>10/02/22</td>
+                                    <td>Nombre del cliente</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>www.dominiocliente.com</td>
-                                    <td>18/02/22</td>
+                                    <td>Nombre del cliente</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>www.dominiocliente.com</td>
-                                    <td>28/02/22</td>
+                                    <td>Nombre del cliente</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title">Prospectos que tiene</h4>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="">
+                                <th>#</th>
+                                <th>Prospectos</th>
+                                <th>Ficha</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nombre del prospecto</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Nombre del prospecto</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Nombre del prospecto</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Nombre del prospecto</td>
+                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-10">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title">Tickets generados</h4>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="">
+                                <th>#</th>
+                                <th>Asunto</th>
+                                <th>involucrado</th>
+                                <th>Prioridad</th>
+                                <th>Estado</th>
+                                <th>Informacion</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Subir contenido</td>
+                                    <td>Nombre del involucrado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Cambiar aspectos de la pagina</td>
+                                    <td>Nombre del involucrado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Creacion de nuevo diseño</td>
+                                    <td>Nombre del involucrado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Actualizacion de SERP</td>
+                                    <td>Nombre del involucrado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-10">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title">Tickets asignados</h4>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="">
+                                <th>#</th>
+                                <th>Asunto</th>
+                                <th>Encargado</th>
+                                <th>Prioridad</th>
+                                <th>Estado</th>
+                                <th>Informacion</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Subir contenido</td>
+                                    <td>Nombre del encargado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Cambiar aspectos de la pagina</td>
+                                    <td>Nombre del encaegado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Creacion de nuevo diseño</td>
+                                    <td>Nombre del encargado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Actualizacion de SERP</td>
+                                    <td>Nombre del encargado</td>
+                                    <td>Alta</td>
+                                    <td>Pendiente</td>
+                                    <td><a type="button" class="ficha"> Ver mas </a></td>
                                 </tr>
                             </tbody>
                         </table>
