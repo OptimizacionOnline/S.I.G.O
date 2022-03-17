@@ -25,7 +25,6 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { DescargasComponent } from './descargas/descargas.component';
 import { VideotecaComponent } from './videoteca/videoteca.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
-import { ClientesComponent } from './clientes/clientes.component';
 import { ProspectosComponent } from './prospectos/prospectos.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { PerfilComponent } from './perfil/perfil.component';
@@ -56,7 +55,6 @@ import { RecuperarPasswordComponent } from './recuperar-password/recuperar-passw
     AdminLayoutComponent,
     DescargasComponent,
     VideotecaComponent,
-    ClientesComponent,
     ProspectosComponent,
     TicketsComponent,
     PerfilComponent,
