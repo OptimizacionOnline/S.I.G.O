@@ -13,6 +13,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/videoteca', title: 'Videoteca',  icon:'movie_creation', class: '' },
     // { path: '/clientes', title: 'Clientes',  icon:'people_outline', class: '' },
     { path: '/info_clientes/listar-cliente', title: 'Clientes',  icon:'people_outline', class: '' },
+    { path: '/info_clientes/ficha-cliente', title: 'Clientes',  icon:'people_outline', class: '' },
     { path: '/prospectos', title: 'Prospectos',  icon:'person_search', class: '' },
     { path: '/tickets', title: 'Tickets',  icon:'local_activity', class: '' },
     { path: '/empleados/listar-empleado', title: 'Empleados', icon:'people_outline', class:''},
