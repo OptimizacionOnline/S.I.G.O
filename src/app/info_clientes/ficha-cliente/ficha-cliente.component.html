@@ -8,7 +8,7 @@
                             <div class="nav-tabs">
                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link active" data-toggle="tab">
+                                        <a mat-button class="nav-link active" href="#datos" data-toggle="tab">
                                             <i class="material-icons">people</i> Datos
                                             <div class="ripple-container"></div>
                                         </a>
@@ -33,12 +33,6 @@
                                     </li>
                                     <li class="nav-item">
                                         <a mat-button class="nav-link" data-toggle="tab">
-                                            <i class="material-icons">people</i> Keywords
-                                            <div class="ripple-container"></div>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a mat-button class="nav-link" data-toggle="tab">
                                             <i class="material-icons">people</i> SERPS
                                             <div class="ripple-container"></div>
                                         </a>
@@ -47,111 +41,94 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-md-12">
-                        <div class="card card-plain">
-                            <div class="card-header card-header-danger">
-                                <ul class="nav nav-tabs" data-tabs="tabs">
-                                    <li class="nav-item">
-                                        <a mat-button class="nav-link active" href="#activos" data-toggle="tab">
-                                            <i class="material-icons">people</i> Activos
-                                            <div class="ripple-container"></div>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a mat-button class="nav-link" href="#inactivos" data-toggle="tab">
-                                            <i class="material-icons">people</i> Inactivos
-                                            <div class="ripple-container"></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <div class="tab-content">
-                                <div class="tab-pane active"> 
-                                    <div class="table-hover">
-                                        <table class="table">
-                                            <tr><th>Nombre</th>
-                                                <td>Nombre del cliente</td></tr>
-                                            <tr><th>Dominio</th>
-                                                <td>www.dominioclinete.com</td></tr>
-                                            <tr><th>Fecha dominio</th>
-                                                <td>dd-mm-aaaa</td></tr>
-                                            <tr><th>Empresa</th>
-                                                <td>Nombre de la empresa</td></tr>
-                                            <tr><th>Email</th>
-                                                <td>cliente@empresa.com</td></tr>
-                                            <tr><th>Telefono fijo</th>
-                                                <td>1234567890</td></tr>
-                                            <tr><th>Telefono movil</th>
-                                                <td>0123456789</td></tr>
-                                            <tr><th>Fecha ingreso</th>
-                                                <td>dd-mm-aaaa</td></tr>
-                                            <tr><th>Skype</th>
-                                                <td>Nombre de cliente</td></tr>
-                                            <tr><th>Membresia</th>
-                                                <td>Plata</td></tr>
-                                            <tr><th>Estatus</th>
-                                                <td>Activo</td></tr>
-                                        </table>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="datos">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-10">
+                                        <div class="card">
+                                            <div class="card-header card-header-warning">
+                                                <h4 class="card-title">Datos del cliente</h4>
+                                            </div>
+                                            <div class="card-body table-responsive">
+                                                <table class="table table-hover">
+                                                    <tr><th>Nombre</th>
+                                                        <td>Nombre del cliente</td></tr>
+                                                    <tr><th>Dominio</th>
+                                                        <td>www.dominioclinete.com</td></tr>
+                                                    <tr><th>Fecha dominio</th>
+                                                        <td>dd-mm-aaaa</td></tr>
+                                                    <tr><th>Empresa</th>
+                                                        <td>Nombre de la empresa</td></tr>
+                                                    <tr><th>Email</th>
+                                                        <td>cliente@empresa.com</td></tr>
+                                                    <tr><th>Telefono fijo</th>
+                                                        <td>1234567890</td></tr>
+                                                    <tr><th>Telefono movil</th>
+                                                        <td>0123456789</td></tr>
+                                                    <tr><th>Fecha ingreso</th>
+                                                        <td>dd-mm-aaaa</td></tr>
+                                                    <tr><th>Skype</th>
+                                                        <td>Nombre de cliente</td></tr>
+                                                    <tr><th>Membresia</th>
+                                                        <td>Plata</td></tr>
+                                                    <tr><th>Estatus</th>
+                                                        <td>Activo</td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr><th>Nombre</th>
-                                                <td>Nombre del cliente</td></tr>
-                                            <tr><th>Dominio</th>
-                                                <td>www.dominioclinete.com</td></tr>
-                                            <tr><th>Fecha dominio</th>
-                                                <td>dd-mm-aaaa</td></tr>
-                                            <tr><th>Empresa</th>
-                                                <td>Nombre de la empresa</td></tr>
-                                            <tr><th>Email</th>
-                                                <td>cliente@empresa.com</td></tr>
-                                            <tr><th>Telefono fijo</th>
-                                                <td>1234567890</td></tr>
-                                            <tr><th>Telefono movil</th>
-                                                <td>0123456789</td></tr>
-                                            <tr><th>Fecha ingreso</th>
-                                                <td>dd-mm-aaaa</td></tr>
-                                            <tr><th>Skype</th>
-                                                <td>Nombre de cliente</td></tr>
-                                            <tr><th>Membresia</th>
-                                                <td>Plata</td></tr>
-                                            <tr><th>Estatus</th>
-                                                <td>Activo</td></tr>
-                                        </table>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="card">
+                                            <div class="card-header card-header-success">
+                                                <h4 class="card-title">Servicios de SEO</h4>
+                                            </div>
+                                            <div class="card-body table-responsive">
+                                                <table class="table table-hover">
+                                                    <tr><th>SEO</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Rediseño</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Branding</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Contenidos</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Social Media</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Email marketing</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Hosting</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Dominio</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Link building</th>
+                                                        <td>N/A</td></tr>
+                                                    <tr><th>Adwords</th>
+                                                        <td>N/A</td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr><th>Nombre</th>
-                                                <td>Nombre del cliente</td></tr>
-                                            <tr><th>Dominio</th>
-                                                <td>www.dominioclinete.com</td></tr>
-                                            <tr><th>Fecha dominio</th>
-                                                <td>dd-mm-aaaa</td></tr>
-                                            <tr><th>Empresa</th>
-                                                <td>Nombre de la empresa</td></tr>
-                                            <tr><th>Email</th>
-                                                <td>cliente@empresa.com</td></tr>
-                                            <tr><th>Telefono fijo</th>
-                                                <td>1234567890</td></tr>
-                                            <tr><th>Telefono movil</th>
-                                                <td>0123456789</td></tr>
-                                            <tr><th>Fecha ingreso</th>
-                                                <td>dd-mm-aaaa</td></tr>
-                                            <tr><th>Skype</th>
-                                                <td>Nombre de cliente</td></tr>
-                                            <tr><th>Membresia</th>
-                                                <td>Plata</td></tr>
-                                            <tr><th>Estatus</th>
-                                                <td>Activo</td></tr>
-                                        </table>
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="card">
+                                            <div class="card-header card-header-danger">
+                                                <h4 class="card-title">Responsable del contenido</h4>
+                                            </div>
+                                            <div class="card-body table-responsive">
+                                                <table class="table table-hover">
+                                                    <tr><th>Nombre del responsable</th>
+                                                        <td>Nombre responsable</td></tr>
+                                                    <tr><th>Persona de contacto</th>
+                                                        <td>Contacto persona</td></tr>
+                                                    <tr><th>Email personal</th>
+                                                        <td>persona@gmail.com</td></tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
                 </div>
             </div>
