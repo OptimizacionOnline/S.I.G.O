@@ -35,6 +35,8 @@ import { FichaClienteComponent } from './info_clientes/ficha-cliente/ficha-clien
 import { ListarClienteComponent } from './info_clientes/listar-cliente/listar-cliente.component';
 import { LoginComponent } from './login/login.component';
 import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
+import { FichaComponent } from './tickets/ficha/ficha.component';
+import { ListarComponent } from './tickets/listar/listar.component';
 
 @NgModule({
   imports: [
@@ -65,6 +67,8 @@ import { RecuperarPasswordComponent } from './recuperar-password/recuperar-passw
     ListarClienteComponent,
     LoginComponent,
     RecuperarPasswordComponent,
+    FichaComponent,
+    ListarComponent,
 
   ],
   providers: [],
