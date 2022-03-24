@@ -14,13 +14,13 @@ import { VideotecaComponent } from 'app/videoteca/videoteca.component';
 import { ListarClienteComponent } from 'app/info_clientes/listar-cliente/listar-cliente.component';
 import { FichaClienteComponent } from 'app/info_clientes/ficha-cliente/ficha-cliente.component';
 import { ProspectosComponent } from 'app/prospectos/prospectos.component';
-import { TicketsComponent } from 'app/tickets/tickets.component';
 import { PerfilComponent } from 'app/perfil/perfil.component';
 import { ConfiguracionComponent } from 'app/configuracion/configuracion.component';
 import { ListarEmpleadoComponent } from 'app/empleados/listar-empleado/listar-empleado.component';
 import { FichaEmpleadoComponent } from 'app/empleados/ficha-empleado/ficha-empleado.component';
 import { LoginComponent } from 'app/login/login.component';
 import { RecuperarPasswordComponent } from 'app/recuperar-password/recuperar-password.component';
+import { ListarComponent } from 'app/tickets/listar/listar.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -79,7 +79,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'info_clientes/listar-cliente',       component: ListarClienteComponent},
     { path: 'info_clientes/ficha-cliente',       component: FichaClienteComponent},
     { path: 'prospectos',     component: ProspectosComponent},
-    { path: 'tickets',        component: TicketsComponent},
+    { path: 'tickets/listar', component: ListarComponent},
     { path: 'perfil',         component: PerfilComponent},
     { path: 'configuracion',  component: ConfiguracionComponent},
     { path: 'empleados/listar-empleado',  component: ListarEmpleadoComponent},

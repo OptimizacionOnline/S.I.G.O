@@ -26,7 +26,6 @@ import { DescargasComponent } from './descargas/descargas.component';
 import { VideotecaComponent } from './videoteca/videoteca.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { ProspectosComponent } from './prospectos/prospectos.component';
-import { TicketsComponent } from './tickets/tickets.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
 import { FichaEmpleadoComponent } from './empleados/ficha-empleado/ficha-empleado.component';
@@ -35,11 +34,12 @@ import { FichaClienteComponent } from './info_clientes/ficha-cliente/ficha-clien
 import { ListarClienteComponent } from './info_clientes/listar-cliente/listar-cliente.component';
 import { LoginComponent } from './login/login.component';
 import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
-import { FichaComponent } from './tickets/ficha/ficha.component';
 import { ListarComponent } from './tickets/listar/listar.component';
+import { FichaComponent } from './tickets/ficha/ficha.component';
 
 @NgModule({
   imports: [
+    
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
@@ -58,7 +58,6 @@ import { ListarComponent } from './tickets/listar/listar.component';
     DescargasComponent,
     VideotecaComponent,
     ProspectosComponent,
-    TicketsComponent,
     PerfilComponent,
     ConfiguracionComponent,
     FichaEmpleadoComponent,
@@ -67,9 +66,8 @@ import { ListarComponent } from './tickets/listar/listar.component';
     ListarClienteComponent,
     LoginComponent,
     RecuperarPasswordComponent,
-    FichaComponent,
     ListarComponent,
-
+    FichaComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
