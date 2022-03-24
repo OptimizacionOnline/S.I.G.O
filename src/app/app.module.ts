@@ -36,6 +36,7 @@ import { LoginComponent } from './login/login.component';
 import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
 import { ListarComponent } from './tickets/listar/listar.component';
 import { FichaComponent } from './tickets/ficha/ficha.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -48,6 +49,7 @@ import { FichaComponent } from './tickets/ficha/ficha.component';
     RouterModule,
     AppRoutingModule,
     ClipboardModule,
+    NgbModule, 
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })
