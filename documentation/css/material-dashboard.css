@@ -14272,7 +14272,7 @@ a[aria-expanded="true"] .caret,
     .register-page .footer .copyright a:hover {
       color: #9c27b0; }
 
-.register-page .form-check label {
+.register-page  {
   margin-left: 27px; }
 
 .register-page .form-check .form-check-label {

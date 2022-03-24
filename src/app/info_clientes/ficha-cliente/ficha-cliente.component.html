@@ -26,7 +26,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link" data-toggle="tab">
+                                        <a mat-button class="nav-link" href="#accesos" data-toggle="tab">
                                             <i class="material-icons">people</i> Accesos
                                             <div class="ripple-container"></div>
                                         </a>
@@ -45,7 +45,7 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="datos">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-10">
+                                    <div class="col-lg-4 col-md-12">
                                         <div class="card">
                                             <div class="card-header card-header-warning">
                                                 <h4 class="card-title">Datos del cliente</h4>
@@ -289,42 +289,133 @@
                                                 <h4 class="card-title">Informacion para directorios</h4>
                                             </div>
                                             <div class="card-body table-responsive">
-                                                <table class="table table-hover">
-                                                    <tr><th>Nombre de contacto</th>
-                                                        <td><textarea class="form-control" rows="1"></textarea></td></tr>
-                                                    <tr><th>Telefonos</th>
-                                                        <td><textarea class="form-control" rows="1"></textarea></td></tr>
-                                                    <tr><th>Direccion</th>
-                                                        <td><textarea class="form-control" rows="2"></textarea></td></tr>
-                                                    <tr><th>Descuentos</th>
-                                                        <td><textarea class="form-control" rows="1"></textarea></td></tr>
-                                                    <tr><th>Descripcion corta (minimo 150 palabras)</th>
-                                                        <td><textarea class="form-control" rows="3"></textarea></td></tr>
-                                                    <tr><th>Descripcion larga (minimo 250 palabras)</th>
-                                                        <td><textarea class="form-control" rows="3"></textarea></td></tr>
-                                                </table>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label>Nombre del contacto</label>
+                                                        <textarea class="form-control" rows="1"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Telefono</label>
+                                                        <textarea class="form-control" rows="1"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Dirección</label>
+                                                        <textarea class="form-control" rows="2"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Descuentos</label>
+                                                        <textarea class="form-control" rows="1"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Descripcion corta (minimo 150 palabras)</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Descripcion larga (minimo 250 palabras)</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-12">
+                                    <div class="col-lg-6 col-md-10">
                                         <div class="card">
                                             <div class="card-header card-header-danger">
                                                 <h4 class="card-title">Datos varios</h4>
                                             </div>
                                             <div class="card-body table-responsive">
-                                                <table class="table table-hover">
-                                                    <tr><th>Productos y/o servicios</th>
-                                                        <td><textarea class="form-control" rows="3"></textarea></td></tr>
-                                                    <tr><th>Slogan</th>
-                                                        <td><textarea class="form-control" rows="2"></textarea></td></tr>
-                                                    <tr><th>Mision</th>
-                                                        <td><textarea class="form-control" rows="2"></textarea></td></tr>
-                                                    <tr><th>Vision</th>
-                                                        <td><textarea class="form-control" rows="2"></textarea></td></tr>
-                                                    <tr><th>Objetivos</th>
-                                                        <td><textarea class="form-control" rows="2"></textarea></td></tr>
-                                                </table>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label>Productos y/o servicios</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Slogan</label>
+                                                        <textarea class="form-control" rows="1"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Mision</label>
+                                                        <textarea class="form-control" rows="2"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Vision</label>
+                                                        <textarea class="form-control" rows="2"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Objetivos</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </form>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="accesos">
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-header card-header-success">
+                                            <h4 class="card-title">Datos de accesos</h4>
+                                        </div>
+                                        <div class="card-body table-responsive">
+                                            <table class="table table-hover" id="activos">
+                                                <thead class="">
+                                                    <th>Tipo</th>
+                                                    <th>URL acceso</th>
+                                                    <th>Usuario</th>
+                                                    <th>Pasword</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CPanel</td>
+                                                        <td>https://promesasdevida.com.mx:2083</td>
+                                                        <td>promesas</td>
+                                                        <td>n1f3Hi3uY5¡;!|</td>
+                                                        <td><i class="fa fa-pencil"></i></td>
+                                                        <td><i class="fa fa-trash"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Correo de marketing</td>
+                                                        <td>http://webmail.promesasdevida.com.mx/</td>
+                                                        <td>marketing@promesasdevida.com.mx</td>
+                                                        <td>Mkt2018#$</td>
+                                                        <td><i class="fa fa-pencil"></i></td>
+                                                        <td><i class="fa fa-trash"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Blog</td>
+                                                        <td>http://promesasdevida.com.mx/blog/wp-admin/</td>
+                                                        <td>promesas</td>
+                                                        <td>3QFNHk2Y7ZJifn)tiD</td>
+                                                        <td><i class="fa fa-pencil"></i></td>
+                                                        <td><i class="fa fa-trash"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mailchimp</td>
+                                                        <td>https://login.mailchimp.com/?logout=1</td>
+                                                        <td>Promesasdevida</td>
+                                                        <td>Mkt2018#$</td>
+                                                        <td><i class="fa fa-pencil"></i></td>
+                                                        <td><i class="fa fa-trash"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Gmail</td>
+                                                        <td>google.com</td>
+                                                        <td>promesasdevida2019@gmail.com</td>
+                                                        <td>Mkt2019##</td>
+                                                        <td><i class="fa fa-pencil"></i></td>
+                                                        <td><i class="fa fa-trash"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chat online</td>
+                                                        <td>https://dashboard.tawk.to/login</td>
+                                                        <td>marketing@promesasdevida.com.mx</td>
+                                                        <td>Mkt2018#$</td>
+                                                        <td><i class="fa fa-pencil"></i></td>
+                                                        <td><i class="fa fa-trash"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
