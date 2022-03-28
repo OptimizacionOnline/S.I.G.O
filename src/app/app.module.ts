@@ -37,10 +37,13 @@ import { RecuperarPasswordComponent } from './recuperar-password/recuperar-passw
 import { ListarComponent } from './tickets/listar/listar.component';
 import { FichaComponent } from './tickets/ficha/ficha.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   imports: [
-    
+    BrowserModule, 
+    CommonModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
