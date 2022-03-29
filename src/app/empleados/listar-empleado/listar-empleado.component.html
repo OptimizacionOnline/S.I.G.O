@@ -60,39 +60,32 @@
                                             </tbody>
                                         </table>
                                         <div class="d-flex justify-content-between p-2">
-                                            <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshEmpleados()">
+                                            <ngb-pagination [collectionSize]="collectionSize1" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshEmpleados()">
                                             </ngb-pagination>
                                             <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshEmpleados()">
-                                                <option [ngValue]="5">5 filas</option>
-                                                <option [ngValue]="10">10 filas</option>
-                                                <option [ngValue]="15">15 filas</option>
+                                                <option [ngValue]="10">Ver 10 filas</option>
+                                                <option [ngValue]="15">Ver 15 filas</option>
+                                                <option [ngValue]="20">Ver 20 filas</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane" id="inactivos">
-                                    <!-- Empleados Inactivos -->
+                                <div class="tab-pane active" id="inactivos">
+                                    <!-- Empleados inactivos-->
                                     <div class="table-responsive">
                                         <table class="table table-hover">
-                                            <thead class="">
-                                                <th>
-                                                    #
-                                                </th>
-                                                <th>
-                                                    Dominio
-                                                </th>
-                                                <th>
-                                                    Ultimo contenido
-                                                </th>
-                                                <th>
-                                                    Ultimo pago
-                                                </th>
-                                                <th>
-                                                    Posicion
-                                                </th>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Departamento</th>
+                                                <th scope="col">Oficina</th>
+                                            </tr>
                                             </thead>
                                             <tbody>
+<<<<<<< HEAD
                                                 <tr>
                                                 <td>
                                                     1
@@ -231,8 +224,29 @@
                                                         <i class="fa fa-power-off"></i>
                                                     </td>
                                                         </tr>
+=======
+                                            <tr *ngFor="let noempleado of noempleados">
+                                                <td scope="row">{{ noempleado.Num }}</td>
+                                                <td>{{ noempleado.Nombre }}</td>
+                                                <td>{{ noempleado.Email }}</td>
+                                                <td>{{ noempleado.Departamento }}</td>
+                                                <td>{{ noempleado.Oficina }}</td>
+                                                <td>{{ noempleado.Rol }}</td>
+                                                <td><i class="fa fa-trash"></i></td>
+                                                <td><i class="fa fa-power-off"></i></td>
+                                            </tr>
+>>>>>>> 837ad80f447d260dc815e9e09c5de5ce3dbbd885
                                             </tbody>
                                         </table>
+                                        <div class="d-flex justify-content-between p-2">
+                                            <ngb-pagination [collectionSize]="collectionSize2" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshNoEmpleados()">
+                                            </ngb-pagination>
+                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshNoEmpleados()">
+                                                <option [ngValue]="10">Ver 10 filas</option>
+                                                <option [ngValue]="15">Ver 15 filas</option>
+                                                <option [ngValue]="20">Ver 20 filas</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

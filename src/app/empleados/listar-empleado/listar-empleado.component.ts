@@ -81,7 +81,7 @@ const EMPLEADO: Empleados[] = [
   },
   {
       Nombre: "Victorio Maniel Molina",
-      Email: "visctorio.molina@optimizacion-online.com",
+      Email: "victorio.molina@optimizacion-online.com",
       Departamento: "Consultor de marketing digital",
       Oficina: "Argentina",
       Rol: "Usuario final"
@@ -113,7 +113,107 @@ const EMPLEADO: Empleados[] = [
       Departamento: "Consultor de marketing digital",
       Oficina: "Guadalajara",
       Rol: "Usuario final"
+  }
+]
+
+interface NoEmpleados {
+  Num?: number;
+  Nombre: string;
+  Email: string;
+  Departamento: string;
+  Oficina: string;
+}
+const NOEMPLEADO: NoEmpleados[] = [
+  {
+      Nombre: "Linda Elena Landis Peña",
+      Email: "elena.landis@optimizacion-online.com",
+      Departamento: "Asistente de direccion general",
+      Oficina: "Leon"
   },
+  {
+      Nombre: "Jacqueline Villalpando Villegas",
+      Email: "jacqueline@optimizacion-online.com",
+      Departamento: "Asistente de direccion general",
+      Oficina: "Leon"
+  },
+  {
+      Nombre: "Moises C A",
+      Email: "moises.optimizacion@gmail.com",
+      Departamento: "Auditorias SEO",
+      Oficina: "Ciudad de Mexico"
+  },
+  {
+      Nombre: "Alejandra Luna Hilario",
+      Email: "alejandra.luna@optimizacion-online.com",
+      Departamento: "Becarios",
+      Oficina: "Cordoba"
+  },
+  {
+      Nombre: "Jair Sanchez Rivera",
+      Email: "jair.sanchez@optimizacion-online.com",
+      Departamento: "Becarios",
+      Oficina: "Cordoba"
+  },
+  {
+      Nombre: "Demo Demo",
+      Email: "demo@demo.com",
+      Departamento: "CEO",
+      Oficina: "Puebla"
+  },
+  {
+      Nombre: "Carlos Gilberto Meléndez Monárrez",
+      Email: "carlos.meledez@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Coatzacoalcos"
+  },
+  {
+      Nombre: "Ximena Herrera Gomez",
+      Email: "ximena.herrera@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Aguascalientes"
+  },
+  {
+      Nombre: "Maria Elena Gomez Gonzalez",
+      Email: "maria.gomez@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Puebla"
+  },
+  {
+      Nombre: "Laura Damaris Colunga Grajeda",
+      Email: "laura.colunga@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Leon"
+  },
+  {
+      Nombre: "Thalia Aguirre Marron",
+      Email: "thalia.aguirre@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Leon"
+  },
+  {
+      Nombre: "Sofia Lopez Sanchez",
+      Email: "sofia.loppez@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Guadalajara"
+  },
+  {
+      Nombre: "Mario Cardenas Garcia",
+      Email: "mario.cardenas@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Ciudad de Mexico"
+  },
+  {
+      Nombre: "Jam Jairo Sanguinetii López",
+      Email: "jam.sanguinetii@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Colombia"
+  },
+  {
+      Nombre: "Abraham de Jesus Reyes Arambula",
+      Email: "abraham.reyes@optimizacion-online.com",
+      Departamento: "Consultor de marketing digital",
+      Oficina: "Guadalajara"
+  }
 ]
 
 @Component({
@@ -121,15 +221,18 @@ const EMPLEADO: Empleados[] = [
   templateUrl: './listar-empleado.component.html',
   styleUrls: ['./listar-empleado.component.scss']
 })
-export class ListarEmpleadoComponent{
 
+export class ListarEmpleadoComponent{
   page = 1;
-  pageSize = 5;
-  collectionSize = EMPLEADO.length;
+  pageSize = 10;
+  collectionSize1 = EMPLEADO.length;
   empleados: Empleados[];
+  collectionSize2 = NOEMPLEADO.length;
+  noempleados: NoEmpleados[];
 
   constructor() {
     this.refreshEmpleados();
+    this.refreshNoEmpleados();
   }
 
   refreshEmpleados() {
@@ -137,7 +240,10 @@ export class ListarEmpleadoComponent{
       .map((empleados, i) => ({Num: i + 1, ...empleados}))
       .slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
   }
-  // ngOnInit(): void {
-  // }
 
+  refreshNoEmpleados() {
+    this.noempleados = NOEMPLEADO
+      .map((noempleados, i) => ({Num: i + 1, ...noempleados}))
+      .slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+  }
 }
