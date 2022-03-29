@@ -60,180 +60,52 @@
                                             </tbody>
                                         </table>
                                         <div class="d-flex justify-content-between p-2">
-                                            <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshEmpleados()">
+                                            <ngb-pagination [collectionSize]="collectionSize1" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshEmpleados()">
                                             </ngb-pagination>
                                             <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshEmpleados()">
-                                                <option [ngValue]="5">5 filas</option>
-                                                <option [ngValue]="10">10 filas</option>
-                                                <option [ngValue]="15">15 filas</option>
+                                                <option [ngValue]="10">Ver 10 filas</option>
+                                                <option [ngValue]="15">Ver 15 filas</option>
+                                                <option [ngValue]="20">Ver 20 filas</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane" id="inactivos">
-                                    <!-- Empleados Inactivos -->
+                                <div class="tab-pane active" id="inactivos">
+                                    <!-- Empleados inactivos-->
                                     <div class="table-responsive">
                                         <table class="table table-hover">
-                                            <thead class="">
-                                                <th>
-                                                    #
-                                                </th>
-                                                <th>
-                                                    Dominio
-                                                </th>
-                                                <th>
-                                                    Ultimo contenido
-                                                </th>
-                                                <th>
-                                                    Ultimo pago
-                                                </th>
-                                                <th>
-                                                    Posicion
-                                                </th>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Departamento</th>
+                                                <th scope="col">Oficina</th>
+                                            </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    wwww.dominiocliente.com
-                                                </td>
-                                                <td>
-                                                    12/05/2021
-                                                </td>
-                                                <td>
-                                                    10/08/2020
-                                                </td>
-                                                <td>
-                                                    20/09/2021
-                                                </td>
-                                                <td>
-                                                    Borrar
-                                                    <!-- <i class="fa fa-pencil"></i>  -->
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        wwww.dominiocliente.com
-                                                    </td>
-                                                    <td>
-                                                        12/05/2021
-                                                    </td>
-                                                    <td>
-                                                        10/08/2020
-                                                    </td>
-                                                    <td>
-                                                        20/09/2021
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>
-                                                        wwww.dominiocliente.com
-                                                    </td>
-                                                    <td>
-                                                        12/05/2021
-                                                    </td>
-                                                    <td>
-                                                        10/08/2020
-                                                    </td>
-                                                    <td>
-                                                        20/09/2021
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>
-                                                        wwww.dominiocliente.com
-                                                    </td>
-                                                    <td>
-                                                        12/05/2021
-                                                    </td>
-                                                    <td>
-                                                        25/03/2020
-                                                    </td>
-                                                    <td>
-                                                        25/03/2021
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>
-                                                        wwww.dominiocliente.com
-                                                    </td>
-                                                    <td>
-                                                        12/05/2021
-                                                    </td>
-                                                    <td>
-                                                        10/07/2019
-                                                    </td>
-                                                    <td>
-                                                        20/05/2021
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        6
-                                                    </td>
-                                                    <td>
-                                                        wwww.dominiocliente.com
-                                                    </td>
-                                                    <td>
-                                                        12/05/2021
-                                                    </td>
-                                                    <td>
-                                                        10/08/2020
-                                                    </td>
-                                                    <td>
-                                                        20/09/2021
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                        </tr>
+                                            <tr *ngFor="let noempleado of noempleados">
+                                                <td scope="row">{{ noempleado.Num }}</td>
+                                                <td>{{ noempleado.Nombre }}</td>
+                                                <td>{{ noempleado.Email }}</td>
+                                                <td>{{ noempleado.Departamento }}</td>
+                                                <td>{{ noempleado.Oficina }}</td>
+                                                <td>{{ noempleado.Rol }}</td>
+                                                <td><i class="fa fa-trash"></i></td>
+                                                <td><i class="fa fa-power-off"></i></td>
+                                            </tr>
                                             </tbody>
                                         </table>
+                                        <div class="d-flex justify-content-between p-2">
+                                            <ngb-pagination [collectionSize]="collectionSize2" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshNoEmpleados()">
+                                            </ngb-pagination>
+                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshNoEmpleados()">
+                                                <option [ngValue]="10">Ver 10 filas</option>
+                                                <option [ngValue]="15">Ver 15 filas</option>
+                                                <option [ngValue]="20">Ver 20 filas</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
