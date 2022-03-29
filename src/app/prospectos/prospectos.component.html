@@ -66,166 +66,34 @@
                                                 <th>
                                                     Consultor
                                                 </th>
+                                                <th>
+                                                    Fuente
+                                                </th>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        Grupo Bali
-                                                    </td>
-                                                    <td>
-                                                        www.lacimaleon.com.mx
-                                                    </td>
-                                                    <td>
-                                                        Erika Magana
-                                                    </td>
-                                                    <td>
-                                                        Eliana Serrano Alonso
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        Powerjet
-                                                    </td>
-                                                    <td>
-                                                        www.powerjet.com.mx
-                                                    </td>
-                                                    <td>
-                                                        -
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>
-                                                        MULTIEMPAQUES NAYCE SA DE CV
-                                                    </td>
-                                                    <td>
-                                                        www.multiempaques.mx
-                                                    </td>
-                                                    <td>
-                                                        -
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>
-                                                        Dr. Angel Fernadez Rodriguez Villanueva
-                                                    </td>
-                                                    <td>
-                                                        www.proctologos.com.mx
-                                                    </td>
-                                                    <td>
-                                                        Dr. Angel F. Rodriguez
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>
-                                                        VALVO
-                                                    </td>
-                                                    <td>
-                                                        www.valvo.com.mx
-                                                    </td>
-                                                    <td>
-                                                        Erik Sigg
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        6
-                                                    </td>
-                                                    <td>
-                                                        JACQUELINE BETANCOURT
-                                                    </td>
-                                                    <td>
-                                                        www.jacquelinebetancourt.com
-                                                    </td>
-                                                    <td>
-                                                        Jacqueline Bentancourt
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
+                                                <tr *ngFor="let prospecto of prospectos">
+                                                    <td scope="row">{{ prospecto.Num }}</td>
+                                                    <td>{{ prospecto.Empresa }}</td>
+                                                    <td>{{ prospecto.Dominio }}</td>
+                                                    <td>{{ prospecto.Contacto }}</td>
+                                                    <td>{{ prospecto.Consultor }}</td>
+                                                    <td>{{ prospecto.Fuente }}</td>
+                                                    <td><i class="fa fa-pencil"></i></td>
+                                                    <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-power-off"></i></td>
                                                 </tr>
                                             </tbody>
                                         </table>
+
+                                        <div class="d-flex justify-content-between p-2">
+                                            <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshProspectos()">
+                                            </ngb-pagination>
+                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshProspectos()">
+                                                <option [ngValue]="5">5 filas</option>
+                                                <option [ngValue]="10">10 filas</option>
+                                                <option [ngValue]="15">15 filas</option>
+                                            </select>
+                                        </div>
                                     </div>                   
                                 </div>
                                 <div class="tab-pane" id="inactivos">
@@ -237,16 +105,19 @@
                                                     #
                                                 </th>
                                                 <th>
+                                                    Empresa
+                                                </th>
+                                                <th>
                                                     Dominio
                                                 </th>
                                                 <th>
-                                                    Ultimo contenido
+                                                    Contacto
                                                 </th>
                                                 <th>
-                                                    Ultimo pago
+                                                    Consultor
                                                 </th>
                                                 <th>
-                                                    Posicion
+                                                    Fuente
                                                 </th>
                                             </thead>
                                             <tbody>
@@ -255,16 +126,19 @@
                                                     1
                                                 </td>
                                                 <td>
-                                                    BLT BRILLANT
+                                                    Proactiva
                                                 </td>
                                                 <td>
-                                                    www.bltmexico.com.mx
+                                                    www.proactiva.co
                                                 </td>
                                                 <td>
-                                                    Daniel Rojas
+                                                    Natalia Ochoa Ochoa
                                                 </td>
                                                 <td>
-                                                    Ana Luisa López Ramírez
+                                                    Natalia Daniela Garcia Sanchez
+                                                </td>
+                                                <td>
+                                                    OTROS
                                                 </td>
                                                 <td>
                                                     <i class="fa fa-pencil"></i> 
@@ -281,16 +155,19 @@
                                                         2
                                                     </td>
                                                     <td>
-                                                        PROVEEDORES INDUSTRIALES CHIMALHUACAN
+                                                        David Miranda
                                                     </td>
                                                     <td>
-                                                        www.pichabrasivos.com.mx
+                                                        www.davidmirandaaraque.com
                                                     </td>
                                                     <td>
-                                                        Eduardo Flores
+                                                        David Miranda
                                                     </td>
                                                     <td>
-                                                        Ana Luisa López Ramírez
+                                                        Natalia Daniela Garcia Sanchez
+                                                    </td>
+                                                    <td>
+                                                        OTROS
                                                     </td>
                                                     <td>
                                                         <i class="fa fa-pencil"></i> 
@@ -319,6 +196,9 @@
                                                         Ana Luisa López Ramírez
                                                     </td>
                                                     <td>
+                                                        ADWORDS
+                                                    </td>
+                                                    <td>
                                                         <i class="fa fa-pencil"></i> 
                                                     </td>
                                                     <td>
@@ -343,6 +223,9 @@
                                                     </td>
                                                     <td>
                                                         Ana Luisa López Ramírez
+                                                    </td>
+                                                    <td>
+                                                        OTROS
                                                     </td>
                                                     <td>
                                                         <i class="fa fa-pencil"></i> 
@@ -371,6 +254,9 @@
                                                         Ana Luisa López Ramírez
                                                     </td>
                                                     <td>
+                                                        COLD CALING
+                                                    </td>
+                                                    <td>
                                                         <i class="fa fa-pencil"></i> 
                                                     </td>
                                                     <td>
@@ -397,6 +283,9 @@
                                                         Ana Luisa López Ramírez
                                                     </td>
                                                     <td>
+                                                        OTROS
+                                                    </td>
+                                                    <td>
                                                         <i class="fa fa-pencil"></i> 
                                                     </td>
                                                     <td>
@@ -418,16 +307,5 @@
             
         </div>
         
-    </div>
-    <div style="display: flex; justify-content: flex-end; margin-right: 15px;">
-        <nav aria-label="Search results pages">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-          </nav>
     </div>
 </div>
