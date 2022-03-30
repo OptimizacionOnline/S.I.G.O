@@ -1,6 +1,6 @@
 <div class="main-content">
     <div class="container-fluid">
-        <h3 class="card-title">Nombre del Empleado | Trayectoria</h3>
+        <h3 class="card-title">Flor Noemí Fernandez Cerón | Trayectoria</h3>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="card card-stats">
@@ -10,9 +10,7 @@
                             <!-- Resumen de empleados-->
                         </div>
                         <p class="card-category">Proyectos Activos</p>
-                        <h3 class="card-title">0
-                            
-                        </h3>
+                        <h3 class="card-title">147</h3>
                     </div>
                 </div>
             </div>
@@ -23,7 +21,7 @@
                             <i class="material-icons">person_search</i>
                         </div>
                         <p class="card-category">Total Prospectos</p>
-                        <h3 class="card-title">0</h3>
+                        <h3 class="card-title">60</h3>
                     </div>
                 </div>
             </div>
@@ -34,7 +32,7 @@
                             <i class="material-icons">local_activity</i>
                         </div>
                         <p class="card-category">Tickets Asignados</p>
-                        <h3 class="card-title">0</h3>
+                        <h3 class="card-title">40</h3>
                     </div>
                 </div>
             </div>
@@ -45,7 +43,7 @@
                             <i class="material-icons">confirmation_number</i>
                         </div>
                         <p class="card-category">Tickets Generados</p>
-                        <h3 class="card-title">+245</h3>
+                        <h3 class="card-title">327</h3>
                     </div>
                 </div>
             </div>
@@ -57,7 +55,7 @@
                             <!-- person_search -->
                         </div>
                         <p class="card-category">Tickets Pendientes</p>
-                        <h3 class="card-title">0</h3>
+                        <h3 class="card-title">1</h3>
                     </div>
                 </div>
             </div>
@@ -69,7 +67,7 @@
                             <!-- local_activity -->
                         </div>
                         <p class="card-category">Tickets Resueltos</p>
-                        <h3 class="card-title">0</h3>
+                        <h3 class="card-title">39</h3>
                     </div>
                 </div>
             </div>
@@ -83,34 +81,25 @@
                     </div>
                     <div class="card-body table-responsive">
                         <table class="table table-hover">
-                            <thead class="">
-                                <th>#</th>
-                                <th>Cliente</th>
-                                <th>Ficha</th>
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Dominio</th>
+                                <th scope="col">Ficha</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Nombre del cliente</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Nombre del cliente</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Nombre del cliente</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Nombre del cliente</td>
+                                <tr *ngFor="let proyecto of proyectos">
+                                    <td scope="row">{{ proyecto.Num }}</td>
+                                    <td>{{ proyecto.Dominio }}</td>
                                     <td><a type="button" class="ficha"> Ficha técnica </a></td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-between p-2">
+                            <ngb-pagination [collectionSize]="collectionSize1" [(page)]="page1" [pageSize]="pageSize1" (pageChange)="refreshProyectos()">
+                            </ngb-pagination>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,34 +110,25 @@
                     </div>
                     <div class="card-body table-responsive">
                         <table class="table table-hover">
-                            <thead class="">
-                                <th>#</th>
-                                <th>Prospectos</th>
-                                <th>Ficha</th>
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Dominio</th>
+                                <th scope="col">Status</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Nombre del prospecto</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Nombre del prospecto</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Nombre del prospecto</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Nombre del prospecto</td>
-                                    <td><a type="button" class="ficha"> Ficha técnica </a></td>
+                                <tr *ngFor="let prospecto of prospectos">
+                                    <td scope="row">{{ prospecto.Num }}</td>
+                                    <td>{{ prospecto.Dominio }}</td>
+                                    <td> Prospecto </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-between p-2">
+                            <ngb-pagination [collectionSize]="collectionSize2" [(page)]="page2" [pageSize]="pageSize2" (pageChange)="refreshProspectos()">
+                            </ngb-pagination>
+                        </div>
                     </div>
                 </div>
             </div>
