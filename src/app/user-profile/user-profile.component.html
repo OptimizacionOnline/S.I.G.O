@@ -1,10 +1,37 @@
 <div class="main-content">
   <div class="container-fluid">
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <button class="btn btn-danger" (click)="triggerModal(modalData)">Open Modal</button>
 
     <ng-template #modalData let-modal>
-      <div class="modal-header">
+      <div class="modal">
         <h4 class="modal-title" id="modal-basic-title">Angular Bootstrap Modal Popup</h4>
         <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
           <span aria-hidden="true">×</span>
@@ -20,7 +47,9 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" (click)="modal.close('Save click')">Close</button>
       </div>
+
     </ng-template>
+
 
     <div class="text-center">
       <p>Haz click en el boton para lanzar el modal deseado</p>
@@ -29,29 +58,30 @@
     </div>
 
     <ng-template #myModalInfo let-modal>
- 
+
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Éxito</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close()">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close()">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           ¡Modal mostrado correctamente!
         </div>
       </div>
-     
+
     </ng-template>
-     
+
     <ng-template #myModalConf let-modal>
-     
+
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Éxito</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="modal.close('Cerrado desde la ventana')">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+            (click)="modal.close('Cerrado desde la ventana')">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           ¿Quieres confirmar la informacion? (Mira el resultado en consola)
@@ -61,7 +91,18 @@
           <button type="button" class="btn btn-primary" (click)="modal.close('Si')">Si</button>
         </div>
       </div>
-     
+
     </ng-template>
+
+    <!-- <div class="container animated bounceIn">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            dsadsada
+          </div>
+        </div>
+      </div>
+    </div> -->
   </div>
 </div>

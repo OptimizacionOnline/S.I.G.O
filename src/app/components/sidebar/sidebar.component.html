@@ -57,6 +57,7 @@
         </li>
     </ul>
   </div>
+    <!-- Llamado del sidebar por path -->
     <ul class="nav">
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link" [routerLink]="[menuItem.path]">
