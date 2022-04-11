@@ -1,7 +1,7 @@
 <div class="main-content">
     <div class="container-fluid">
         <div style="display: flex; justify-content: flex-end; margin-right: 15px;">
-            <button class="btn btn-danger">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#empleadomodal">
                 Nuevo empleado
                 <i class="fa fa-plus" aria-hidden="true" style="margin-left:15px"></i>
             </button>
@@ -113,7 +113,87 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="empleadomodal" tabindex="-1" role="dialog" aria-labelledby="empleadomodal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Empleado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="asunto">
+                                    Asunto de la solicitud <span class="required">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="asunto" aria-describedby="asuntoTicket"
+                                    placeholder="Asunto del ticket">
+                            </div>
+                            <div class="form-group">
+                                <p-calendar inputid="icon" class="p-element p-inputwrapper ng-tns-c41-5 ng-pristine ng-valid ng-star-inserted ng-touched">
+                                    <span class="ng-tns-c41-5 p-calendar p-calendar-w-btn">
+                                        <input type="text" autocomplete="off" class="ng-tns-c41-5 p-inputtext p-component ng-star-inserted" placeholder="" id="icon">
+                                        <button type="button" pbutton="" pripple="" tabindex="0" class="p-element p-ripple p-datepicker-trigger ng-tns-c41-5 p-button p-component p-button-icon-only ng-star-inserted">
+                                            <span class="p-button-icon pi pi-calendar" aria-hidden="true"></span>
+                                            <span aria-hidden="true" class="p-button-label">&nbsp;</span>
+                                            <span class="p-ink"></span>
+                                        </button>
+                                    </span> 
+                                </p-calendar>
+                            </div>
+                            <div class="form-group">
+                                <label for="departamento">Destinatario
+                                    <span class="required">*</span>
+                                </label>
+                                <select name="destinatario" id="destinatario" class="form-control">
+                                    <optgroup label="Sistemas">
+                                        <option value="653">
+                                            Diana Laura Páez Sánchez
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Sistemas">
+                                        <option value="644">
+                                            José Ariel Vázquez López
+                                        </option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="importancia">
+                                    Importancia de la solicitud <span class="required">*</span>
+                                </label>
+                                <select class="form-control" id="importancia">
+                                    <option>Baja</option>
+                                    <option>Media</option>
+                                    <option>Alta</option>
+                                </select>
+                            </div>
+                            <div class="form-group">					
+                                <label for="mensaje">
+                                    Descripción de la solicitud <span class="required">*</span>
+                                </label>
+                                <textarea name="descripcion" id="descripcion" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="evidencia">
+                                    ¿Deseas adjuntar una imagen de evidencia?<span class="required">*</span>
+                                </label>
+                                <input type="file" class="form-control-file" id="evidencia">
+                            </div>	
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Enviar ticket</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
