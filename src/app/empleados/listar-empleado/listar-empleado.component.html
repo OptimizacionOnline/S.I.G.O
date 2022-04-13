@@ -60,9 +60,9 @@
                                             </tbody>
                                         </table>
                                         <div class="d-flex justify-content-between p-2">
-                                            <ngb-pagination [collectionSize]="collectionSize1" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshEmpleados()">
+                                            <ngb-pagination [collectionSize]="collectionSize1" [(page)]="page1" [pageSize]="pageSize1" (pageChange)="refreshEmpleados()">
                                             </ngb-pagination>
-                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshEmpleados()">
+                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize1" (ngModelChange)="refreshEmpleados()">
                                                 <option [ngValue]="10">Ver 10 filas</option>
                                                 <option [ngValue]="15">Ver 15 filas</option>
                                                 <option [ngValue]="20">Ver 20 filas</option>
@@ -98,9 +98,9 @@
                                             </tbody>
                                         </table>
                                         <div class="d-flex justify-content-between p-2">
-                                            <ngb-pagination [collectionSize]="collectionSize2" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshNoEmpleados()">
+                                            <ngb-pagination [collectionSize]="collectionSize2" [(page)]="page2" [pageSize]="pageSize2" (pageChange)="refreshNoEmpleados()">
                                             </ngb-pagination>
-                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshNoEmpleados()">
+                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize2" (ngModelChange)="refreshNoEmpleados()">
                                                 <option [ngValue]="10">Ver 10 filas</option>
                                                 <option [ngValue]="15">Ver 15 filas</option>
                                                 <option [ngValue]="20">Ver 20 filas</option>

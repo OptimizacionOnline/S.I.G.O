@@ -223,10 +223,12 @@ const EMPLEADO: Empleados[] = [
     })
 
     export class ListarEmpleadoComponent{
-    page = 1;
-    pageSize = 10;
+    page1 = 1;
+    pageSize1 = 10;
     collectionSize1 = EMPLEADO.length;
     empleados: Empleados[];
+    page2 = 1;
+    pageSize2 = 10;
     collectionSize2 = NOEMPLEADO.length;
     noempleados: NoEmpleados[];
 
@@ -238,12 +240,12 @@ const EMPLEADO: Empleados[] = [
     refreshEmpleados() {
         this.empleados = EMPLEADO
         .map((empleados, i) => ({Num: i + 1, ...empleados}))
-        .slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+        .slice((this.page1 - 1) * this.pageSize1, (this.page1 - 1) * this.pageSize1 + this.pageSize1);
     }
 
     refreshNoEmpleados() {
         this.noempleados = NOEMPLEADO
         .map((noempleados, i) => ({Num: i + 1, ...noempleados}))
-        .slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+        .slice((this.page2 - 1) * this.pageSize2, (this.page2 - 1) * this.pageSize2 + this.pageSize2);
     }
 }
