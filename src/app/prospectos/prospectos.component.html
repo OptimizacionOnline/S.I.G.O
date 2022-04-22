@@ -121,182 +121,28 @@
                                                 </th>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    Proactiva
-                                                </td>
-                                                <td>
-                                                    www.proactiva.co
-                                                </td>
-                                                <td>
-                                                    Natalia Ochoa Ochoa
-                                                </td>
-                                                <td>
-                                                    Natalia Daniela Garcia Sanchez
-                                                </td>
-                                                <td>
-                                                    OTROS
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-pencil"></i> 
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </td>
-                                                <td>
-                                                    <i class="fa fa-power-off"></i>
-                                                </td>
+                                                <tr *ngFor="let np of noProspectos">
+                                                    <td scope="row">{{ np.Num }}</td>
+                                                    <td>{{ np.Empresa }}</td>
+                                                    <td>{{ np.Dominio }}</td>
+                                                    <td>{{ np.Contacto }}</td>
+                                                    <td>{{ np.Consultor }}</td>
+                                                    <td>{{ np.Fuente }}</td>
+                                                    <td><i class="fa fa-trash"></i></td>
+                                                    <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-power-off"></i></td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        David Miranda
-                                                    </td>
-                                                    <td>
-                                                        www.davidmirandaaraque.com
-                                                    </td>
-                                                    <td>
-                                                        David Miranda
-                                                    </td>
-                                                    <td>
-                                                        Natalia Daniela Garcia Sanchez
-                                                    </td>
-                                                    <td>
-                                                        OTROS
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>
-                                                        Graphiserv
-                                                    </td>
-                                                    <td>
-                                                        www.graphiserv.com.mx
-                                                    </td>
-                                                    <td>
-                                                        Hugo Lozano
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        ADWORDS
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>
-                                                        EFECTIVALE
-                                                    </td>
-                                                    <td>
-                                                        www.efectivale.com
-                                                    </td>
-                                                    <td>
-                                                        Luis Velez
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        OTROS
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>
-                                                        Dental Glaf Kids
-                                                    </td>
-                                                    <td>
-                                                        www.dentalglafkids.com
-                                                    </td>
-                                                    <td>
-                                                        Salvador Patino
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        COLD CALING
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        6
-                                                    </td>
-                                                    <td>
-                                                        SISTEMA FLORES AG
-                                                    </td>
-                                                    <td>
-                                                        www.sistemaag.com.mx
-                                                    </td>
-                                                    <td>
-                                                        -
-                                                    </td>
-                                                    <td>
-                                                        Ana Luisa López Ramírez
-                                                    </td>
-                                                    <td>
-                                                        OTROS
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-pencil"></i> 
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fa fa-power-off"></i>
-                                                    </td>
-                                                        </tr>
                                             </tbody>
                                         </table>
+                                        <div class="d-flex justify-content-between p-2">
+                                            <ngb-pagination [collectionSize]="collectionSize2" [(page)]="page2" [pageSize]="pageSize2" (pageChange)="refreshNoProspectos()">
+                                            </ngb-pagination>
+                                            <select class="form-select" style="width: auto" [(ngModel)]="pageSize2" (ngModelChange)="refreshNoProspectos()">
+                                                <option [ngValue]="5">5 filas</option>
+                                                <option [ngValue]="10">10 filas</option>
+                                                <option [ngValue]="15">15 filas</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
