@@ -40,6 +40,13 @@ import { FichaComponent } from './tickets/ficha/ficha.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { DatosClienteComponent } from './info_clientes/ficha-cliente/datos-cliente/datos-cliente.component';
+import { ContenidosClienteComponent } from './info_clientes/ficha-cliente/contenidos-cliente/contenidos-cliente.component';
+import { PagosClienteComponent } from './info_clientes/ficha-cliente/pagos-cliente/pagos-cliente.component';
+import { IntegrantesClienteComponent } from './info_clientes/ficha-cliente/integrantes-cliente/integrantes-cliente.component';
+import { LinksClienteComponent } from './info_clientes/ficha-cliente/links-cliente/links-cliente.component';
+import { AccesosClienteComponent } from './info_clientes/ficha-cliente/accesos-cliente/accesos-cliente.component';
+import { SerpsClienteComponent } from './info_clientes/ficha-cliente/serps-cliente/serps-cliente.component';
 
 @NgModule({
   imports: [
@@ -74,7 +81,14 @@ import { BrowserModule } from '@angular/platform-browser';
     LoginComponent,
     RecuperarPasswordComponent,
     ListarComponent,
-    FichaComponent
+    FichaComponent,
+    DatosClienteComponent,
+    ContenidosClienteComponent,
+    PagosClienteComponent,
+    IntegrantesClienteComponent,
+    LinksClienteComponent,
+    AccesosClienteComponent,
+    SerpsClienteComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,6 +14,18 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a mat-button class="nav-link" href="#contenidos" data-toggle="tab">
+                                            <i class="material-icons">people</i> Contenidos
+                                            <div class="ripple-container"></div>
+                                        </a> 
+                                    </li>
+                                    <li class="nav-item">
+                                        <a mat-button class="nav-link" href="#pagos" data-toggle="tab">
+                                            <i class="material-icons">people</i> Pagos
+                                            <div class="ripple-container"></div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a mat-button class="nav-link" href="#integrantes" data-toggle="tab">
                                             <i class="material-icons">people</i> Integrantes
                                             <div class="ripple-container"></div>
@@ -44,364 +56,25 @@
                     <div class="card-body">
                         <div class="tab-content">
                             <div class="tab-pane active" id="datos">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="card">
-                                            <div class="card-header card-header-warning">
-                                                <h4 class="card-title">Datos del cliente</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <table class="table table-hover">
-                                                    <tr><th>Nombre</th>
-                                                        <td>Lissete Campos Yañez</td></tr>
-                                                    <tr><th>Dominio</th>
-                                                        <td>biera.com.mx/</td></tr>
-                                                    <tr><th>Fecha dominio</th>
-                                                        <td>2011-02-08</td></tr>
-                                                    <tr><th>Empresa</th>
-                                                        <td>Biera</td></tr>
-                                                    <tr><th>Email</th>
-                                                        <td>contacto@biera.com.mx</td></tr>
-                                                    <tr><th>Telefono fijo</th>
-                                                        <td>4491784180</td></tr>
-                                                    <tr><th>Telefono movil</th>
-                                                        <td>4492019938</td></tr>
-                                                    <tr><th>Fecha ingreso</th>
-                                                        <td>2021-08-31</td></tr>
-                                                    <tr><th>Skype</th>
-                                                        <td>No tiene</td></tr>
-                                                    <tr><th>Membresia</th>
-                                                        <td>Plata</td></tr>
-                                                    <tr><th>Estatus</th>
-                                                        <td>Activo</td></tr>
-                                                </table>
-                                                <a type="button" class="btn btn-warning">Editar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="card">
-                                            <div class="card-header card-header-success">
-                                                <h4 class="card-title">Servicios de SEO</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <table class="table table-hover">
-                                                    <tr><th>SEO</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Rediseño</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Branding</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Contenidos</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Social Media</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Email marketing</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Hosting</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Dominio</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Link building</th>
-                                                        <td>N/A</td></tr>
-                                                    <tr><th>Adwords</th>
-                                                        <td>N/A</td></tr>
-                                                </table>
-                                                <a type="button" class="btn btn-success">Actualizar servicios</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="card">
-                                            <div class="card-header card-header-danger">
-                                                <h4 class="card-title">Responsable del contenido</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <table class="table table-hover">
-                                                    <tr><th>Nombre del responsable</th>
-                                                        <td>Nombre responsable</td></tr>
-                                                    <tr><th>Persona de contacto</th>
-                                                        <td>Contacto persona</td></tr>
-                                                    <tr><th>Email personal</th>
-                                                        <td>persona@gmail.com</td></tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-datos-cliente></app-datos-cliente>
+                            </div>
+                            <div class="tab-pane" id="contenidos">
+                                <app-contenidos-cliente></app-contenidos-cliente>
+                            </div>
+                            <div class="tab-pane active" id="pagos">
+                                <app-pagos-cliente></app-pagos-cliente>
                             </div>
                             <div class="tab-pane" id="integrantes">
-                                <div class="row">
-                                    <div class="card">
-                                        <div class="card-header card-header-success">
-                                            <h4 class="card-title">Informacion de los integrantes</h4>
-                                        </div>
-                                        <div class="card-body table-responsive">
-                                            <table class="table table-hover" id="activos">
-                                                <thead class="">
-                                                    <th>Nombre</th>
-                                                    <th>Departamento</th>
-                                                    <th>Telefono</th>
-                                                    <th>Email</th>
-                                                    <th>Skype</th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Nombre del encargado</td>
-                                                        <td>Sistemas</td>
-                                                        <td>1234567890</td>
-                                                        <td>encargado@optimizacion.com</td>
-                                                        <td>Usuario Skype</td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nombre del encargado</td>
-                                                        <td>Sistemas</td>
-                                                        <td>1234567890</td>
-                                                        <td>encargado@optimizacion.com</td>
-                                                        <td>Usuario Skype</td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nombre del encargado</td>
-                                                        <td>Sistemas</td>
-                                                        <td>1234567890</td>
-                                                        <td>encargado@optimizacion.com</td>
-                                                        <td>Usuario Skype</td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nombre del encargado</td>
-                                                        <td>Sistemas</td>
-                                                        <td>1234567890</td>
-                                                        <td>encargado@optimizacion.com</td>
-                                                        <td>Usuario Skype</td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nombre del encargado</td>
-                                                        <td>Sistemas</td>
-                                                        <td>1234567890</td>
-                                                        <td>encargado@optimizacion.com</td>
-                                                        <td>Usuario Skype</td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nombre del encargado</td>
-                                                        <td>Sistemas</td>
-                                                        <td>1234567890</td>
-                                                        <td>encargado@optimizacion.com</td>
-                                                        <td>Usuario Skype</td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-integrantes-cliente></app-integrantes-cliente>
                             </div>
                             <div class="tab-pane" id="links">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="card">
-                                            <div class="card-header card-header-warning">
-                                                <h4 class="card-title">Informacion para directorios</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label>Nombre del contacto</label>
-                                                        <textarea class="form-control" rows="1">Deyanira Campos</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Telefono</label>
-                                                        <textarea class="form-control" rows="1">449 178 41 80</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Dirección</label>
-                                                        <textarea class="form-control" rows="2">Calle Canal Interceptor 712 int. 48, Col. Bosques de la Alameda, Cd. Aguascalientes, Aguascalientes, C.P. 20169, México</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Descuentos</label>
-                                                        <textarea class="form-control" rows="1">No aplica</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Descripcion corta (minimo 150 palabras)</label>
-                                                        <textarea class="form-control" rows="3">Un concepto único al norte de la ciudad, espacios llenos de armonía que se adaptan a un estilo de vida moderno, nuestra propuesta de residencias y departamentos cumplen las expectativas de todos los gustos, dentro de una práctica y segura cerrada en una de las ciudad con mayor crecimiento del país. Te invitamos a que conozcas Vía 422, estamos seguros que te va a gustar.  BIERA Expresión Inmobiliaria surge en la ciudad de Aguascalientes, como opción ideal para promover todo tipo de inmueble debido a que está enfocada al público que busca comprar, rentar o vender casa, oficina, local comercial o terreno, así como información de servicios, muebles y decoración, brindando al lector información práctica y amigable a través de la revista impresa, página de internet y redes. Revista de Bienes Raíces 100% Hidrocálida. Encuentra tu casa ideal en Aguascalientes,  ya que somos un medio donde se puede consultar las opciones de vivienda nueva y usada; así como diferentes servicios relacionados al hogar.</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Descripcion larga (minimo 250 palabras)</label>
-                                                        <textarea class="form-control" rows="3">La idea de la revista surge por la necesidad de tener un medio en Aguascalientes donde se pudiera consultar las opciones de vivienda nueva y poder conocer las ubicaciones, rango de precio y datos de contacto, y además de tener a la mano opciones de vivienda usada para facilitar la decisión de compra. El concepto se amplió para dar cabida a otras empresas relacionadas a la compra de vivienda como mueblerías, tiendas de decoración, equipamiento y servicios.  BIERA Expresión Inmobiliaria surge en la ciudad de Aguascalientes, como opción ideal para promover todo tipo de inmueble debido a que está enfocada al público que busca comprar, rentar o vender casa, oficina, local comercial o terreno, así como información de servicios, muebles y decoración, brindando al lector información práctica y amigable a través de la revista impresa, página de internet y redes sociales. Promovemos bienes raíces en Aguascalientes, desde fraccionamientos, desarrollos como Grupo San Cristóbal, San Gerardo, Terra Home, Hogares Hema, vivienda, casas en venta, casas en renta, a través de una revista impresa y digital, redes sociales, brindamos información de interés rnRevista de Bienes Raíces 100% Hidrocálida. Encuentra tu casa ideal en Aguascalientes,rn ya que somos un medio donde se puede consultar las opciones de vivienda nueva y usada; así como diferentes servicios relacionados al hogar.rnBIERA Expresión Inmobiliaria surge en la ciudad de Aguascalientes, como opción ideal para promover todo tipo de inmueble debido a que está enfocada al público que busca comprar, rentar o vender casa, oficina, local comercial o terreno, así como información de servicios, muebles y decoración, brindando al lector información práctica y amigable a través de la revista impresa, página de internet y redes sociales.</textarea>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="card">
-                                            <div class="card-header card-header-danger">
-                                                <h4 class="card-title">Datos varios</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label>Productos y/o servicios</label>
-                                                        <textarea class="form-control" rows="3">Renta/venta de casas, departamentos y propiedades.</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Slogan</label>
-                                                        <textarea class="form-control" rows="1">No tiene</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Mision</label>
-                                                        <textarea class="form-control" rows="2">No tiene</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Vision</label>
-                                                        <textarea class="form-control" rows="2">No tiene</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Objetivos</label>
-                                                        <textarea class="form-control" rows="3">Ventas/rentas</textarea>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-links-cliente></app-links-cliente>
                             </div>
                             <div class="tab-pane" id="accesos">
-                                <div class="row">
-                                    <div class="card">
-                                        <div class="card-header card-header-success">
-                                            <h4 class="card-title">Datos de accesos</h4>
-                                        </div>
-                                        <div class="card-body table-responsive">
-                                            <table class="table table-hover" id="activos">
-                                                <thead class="">
-                                                    <th>Tipo</th>
-                                                    <th>URL acceso</th>
-                                                    <th>Usuario</th>
-                                                    <th>Pasword</th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Godaddy</td>
-                                                        <td>https://biera.com.mx</td>
-                                                        <td>#Biera2017</td>
-                                                        <td>46639872</td>
-                                                        <td><i class="fa fa-pencil"></i></td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cpanel</td>
-                                                        <td>https://biera.com.mx</td>
-                                                        <td>seo.marketing</td>
-                                                        <td>Biera#2021_SEO</td>
-                                                        <td><i class="fa fa-pencil"></i></td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Gestor de contenido</td>
-                                                        <td>https://biera.com.mx/wp-admin/</td>
-                                                        <td>seo_marketing</td>
-                                                        <td>SEO_2021#</td>
-                                                        <td><i class="fa fa-pencil"></i></td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mailchimp</td>
-                                                        <td>https://login.mailchimp.com/</td>
-                                                        <td>RevistaBiera</td>
-                                                        <td>Biera#2020</td>
-                                                        <td><i class="fa fa-pencil"></i></td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Gmail</td>
-                                                        <td>google.com</td>
-                                                        <td>biera.marketingseo@gmail.com</td>
-                                                        <td>biera2022</td>
-                                                        <td><i class="fa fa-pencil"></i></td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Chat online</td>
-                                                        <td>https://dashboard.tawk.to/login</td>
-                                                        <td>marketing@promesasdevida.com.mx</td>
-                                                        <td>Mkt2018#$</td>
-                                                        <td><i class="fa fa-pencil"></i></td>
-                                                        <td><i class="fa fa-trash"></i></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-accesos-cliente></app-accesos-cliente>
                             </div>
                             <div class="tab-pane" id="SERPS">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="card">
-                                            <div class="card-header card-header-warning">
-                                                <h4 class="card-title">Registro de palabras clave</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label>Palabra clave</label>
-                                                        <textarea class="form-control" rows="1">Terenos</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Pagina</label>
-                                                        <textarea class="form-control" rows="1">4</textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Posicion</label>
-                                                        <textarea class="form-control" rows="1">2</textarea>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-4">
-                                        <div class="card">
-                                            <div class="card-header card-header-success">
-                                                <h4 class="card-title">Informacion de SERPS</h4>
-                                            </div>
-                                            <div class="card-body table-responsive">
-                                                <table class="table table-hover" id="activos">
-                                                    <thead class="">
-                                                        <th>Palabra clave</th>
-                                                        <th>Pagina</th>
-                                                        <th>Posicion</th>
-                                                        <th>Posicion general</th>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Venta de terrenos</td>
-                                                            <td>2</td>
-                                                            <td>8</td>
-                                                            <td>18</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bienes raices</td>
-                                                            <td>3</td>
-                                                            <td>2</td>
-                                                            <td>22</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Renta de condominos</td>
-                                                            <td>1</td>
-                                                            <td>8</td>
-                                                            <td>8</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <app-serps-cliente></app-serps-cliente>
                             </div>
                         </div>
                     </div>
